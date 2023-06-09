@@ -1,0 +1,36 @@
+{
+    "env": {
+        "RAZORPAY_KEY_ID": "rzp_test_T2RTEHC7TCVFd3",
+ 
+"RAZORPAY_KEY_SECRET": "M5ooNPNVPxgJmtU3Awtna84y",
+
+
+"SENDGRID_API_KEY" : "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",
+
+"SQL_PASSWORD" : "myself&me",
+
+
+"USER_NAME": "root",
+
+"DB_NAME":  "localhost",
+
+"DB_NAME": "myproj",
+
+"Access_key": "AKIAURO6KMIDODXJRIWC",
+
+"IAM_USER_KEY":"jyotisujeeth@gmail.com",
+
+ "BUCKET_NAME": "myappmyfile",
+
+"IAM_SECRET_KEY": "Myself&me2",
+
+
+
+
+"Secret_access_key" : "lNI4OCdEDBDLlx2HRYZkxzgqNQ1DqPTrxLLc/VWX",
+
+"TOKEN_SECRET": "98789d8cedf2f9a86af5391e930337cfe11ffc64ef0140fa8989920e2034a307494d74fe50bd5c7e3f137e56c7da3999309264ae5c29b54937c72f6c27563f28",
+    
+"token": "98789d8cedf2f9a86af5391e930337cfe11ffc64ef0140fa8989920e2034a307494d74fe50bd5c7e3f137e56c7da3999309264ae5c29b54937c72f6c27563f28"
+    }
+}

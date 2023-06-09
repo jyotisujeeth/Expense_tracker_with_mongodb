@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow: auto;
+}
+
+body.light {
+  background-color: rgb(232, 229, 229);
+  /* background: linear-gradient(120deg, #2980b9, #944fb2); */
+}
+
+body.dark {
+  background-color: #edebeb;
+  color: white;
+}
+
+#premium {
+  margin: 20px;
+  width: 100px;
+  background: #1877f2;
+  color: white;
+  border-radius: 30px;
+  border: none;
+}
+.report {
+  background-color: #1877f2;
+  margin: 20px;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 30px;
+}
+.report:hover,
+#premium:hover {
+  background-color: rgb(14, 48, 151);
+}
+
+div#nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+#left.dark {
+  width: 72%;
+  float: left;
+}
+
+.add_expense_btn {
+  padding: 7px;
+  width: 120px;
+  margin: 10px 0;
+  background: #1877f2;
+  color: white;
+  border-radius: 10px;
+  border: none;
+}
+
+form .form_items {
+  position: relative;
+  border-bottom: 2px solid #adadad;
+  margin: 10px 0;
+}
+
+.form_items input {
+  width: 100%;
+  padding: 0 5px;
+  height: 40px;
+  font-size: 12px;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.form_items input[type="text"].dark {
+  color: black;
+}
+.center.dark {
+  margin: 25px auto 55px;
+  border-radius: 10px;
+  /* position: absolute; */
+}
+
+.center.light {
+  margin: 25px auto 55px;
+  max-width: 300px;
+  min-width: 200px;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
+}
+.center.dark {
+  margin: 25px 500px 55px;
+  max-width: 400px;
+  min-width: 300px;
+  color: black;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 10px 10px 15px rgba(238, 238, 238, 0.05);
+  padding: 30px 40px;
+}
+
+.center h1 {
+  text-align: center;
+  padding: 10px 0;
+  /* border-bottom: 1px solid silver; */
+}
+.center form {
+  padding: 20px 14px;
+  box-sizing: border-box;
+}
+
+center form.dark {
+  color: white;
+}
+
+#listofExpenses {
+  margin: 10px;
+  padding-left: 20px;
+  color: black;
+  margin: 25px auto 55px;
+  max-width: 500px;
+  min-width: 200px;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
+}
+.del,
+.edt {
+  padding: 5px;
+  width: 100px;
+  height: 25px;
+  margin: 10px 0;
+  background: #1877f2;
+  color: white;
+  border-radius: 8px;
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
+  outline: none;
+}
+
+.button {
+  background: #1877f2;
+  border-radius: 10px;
+
+  text-align: center;
+  width: 10%;
+  display: inline-block;
+  margin-left: 20px;
+}
+#right.dark {
+  margin: 15px 0px;
+  float: left;
+  width: 26%;
+  background: #1877f2;
+  border-radius: 10px;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
+  display: none;
+  padding: 10px;
+}
+
+.leaderboard {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 2px solid #adadad;
+  padding: 5px;
+}
+.leaderboardList p {
+  text-align: center;
+}
+
+.leaderboardList {
+  list-style-type: none;
+  display: flex;
+  margin: 12px 0px;
+}
+
+.leaderboardList .sno {
+  width: 10%;
+}
+
+.leaderboardList .name {
+  width: 44%;
+}
+
+.leaderboardList #user {
+  cursor: pointer;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#expense-div.light {
+  margin: 15px auto;
+  width: 700px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
+}
+#expense-div.dark {
+  margin: 15px 20px;
+  width: 95%;
+  background: #474747;
+  border-radius: 10px;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
+}
+#expense-div.list {
+  padding: 10px 0;
+  border-bottom: 2px solid black;
+  margin: 10px 30px;
+}
+.expense-info {
+  width: 85%;
+  display: inline-block;
+}
+
+#pagination {
+  text-align: center;
+  padding: 2px;
+  height: 30px;
+}

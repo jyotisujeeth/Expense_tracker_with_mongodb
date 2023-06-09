@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="index.css" />
+</head>
+
+<body class="light">
+    <div id="nav">
+        <button onclick="payment(event)" id="premium">Buy Premium</button>
+        <!-- <div id="message"></div> -->
+        <button onclick="reportGenerate(event)" class="report" id="report"> Report</button>
+    </div>
+
+    <section class="row">
+        <div class="light" id="left">
+            <!-- <div class="expense_form_container"> -->
+            <div class="center light">
+                <form onsubmit="saveToStorage(event)" method="POST" class="expense_from" id="expense_from">
+                    <div class="form_items">
+                        <label for="expenseamount"> ExpenseAmount:</label>
+                        <input id="expenseamount" , type="number" name="expenseamount" required> </input>
+                    </div>
+                    <div class="form_items">
+                        <label for="description"> Description:</label>
+                        <input id="description" , type="text" name="description" required> </input>
+                    </div>
+                    <div class="form_items">
+                        <label for="category">Category:</label>
+                        <select id="category" name="category">
+                            <option value="select">Select</option>
+                            <option value="fuel">Fuel</option>
+                            <option value="food">Food</option>
+                            <option value="electricity">Electricity</option>
+                            <option value="Movie">Movie</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="add_expense_btn">Add Expense</button>
+                </form>
+                <!-- </div> -->
+            </div>
+
+
+            <div style="text-align: center ; margin-top: 35px; color:black">
+                <h1>Expenses</h1>
+            </div>
+            <div style="text-align: center ; margin-top: 35px; color:black">
+                <form onsubmit="perPage(event)" id="perpage">
+                    Expenses Per Page : <input type="number" min="5" max="20" name="Items_Per_Page">
+                    <button type="submit">submit</button>
+                </form>
+            </div>
+
+            <div id="expense-div" class="light"></div>
+            <div id="pagination">123</div>
+            <!-- </div> -->
+            <ul id="listofExpenses"></ul>
+        </div>
+
+        <div id="right" class="dark">
+            <div style="text-align: center">
+                <h1>LeaderBoard</h1>
+            </div>
+            <li class="leaderboard" id="leaderboard">
+                <h4></h4>
+                <h4>Names</h4>
+                <h4>Expense (₹)</h4>
+            </li>
+        </div>
+
+
+    </section>
+
+    <script src=" https://checkout.razorpay.com/v1/checkout.js">
+    </script>
+    <script src='./index.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.2/axios.min.js"></script>
+
+</body>
+
+</html>

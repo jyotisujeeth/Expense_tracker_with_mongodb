@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="center">
+        <header>
+            <h1>Sign up</h1>
+        </header>
+        <div class="container">
+            <form onsubmit="signUp(event)" id="my-signup" method="POST">
+                <div>
+                    <div>
+                        <label for="name">Name:</label>
+                        <input type="text" name="name" required />
+                    </div>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" required />
+                    </div>
+
+                    <div>
+                        <label for="password">Password:</label>
+                        <input type="password" name="password" required />
+                    </div>
+                    <div>
+                        <input class="btn" type="submit" value="Signup">
+                    </div>
+            </form>
+        </div>
+        <p class="have_account">Already a Member</p>
+        <a href='./login.html'>Existing User - Login</a>
+
+        <div id="existing"></div>
+        <ul id="listOfUsers"></ul>
+    </div>
+    <script src="./signup.js"></script>
+
+    <!-- <script src="https://unpkg.com/axios/dist/axios.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.1.2/axios.min.js"></script>
+    <!-- <script type="text/javascript" src="//www.turnjs.com/lib/turn.min.js "></script> -->
+</body>
+
+</html>

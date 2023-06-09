@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Login</h1>
+    </header>
+    <div class="container">
+        <form onsubmit="login(event)" id="my-login">
+            <div>
+
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" required />
+                </div>
+                <div>
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" required />
+                </div>
+                <span class><a href='./forgot.html'>Forgot Password
+                    </a></span>
+                <div>
+                    <input class="btn" type="submit" value="Login">
+                </div>
+        </form>
+    </div>
+    <p class=" dont_have_account">Don't have account</p>
+    <span class><a href='./signup.html'>New Member? - Signup Now
+        </a></span>
+
+
+    <script src="./login.js"></script>
+
+    <div id="listOfUsers"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+        integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.2/axios.min.js"></script> -->
+</body>
+
+</html>

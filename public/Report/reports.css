@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow: auto;
+}
+
+body.dark {
+  background-color: #b0adad;
+  color: white;
+}
+
+#nav {
+  display: flex;
+  justify-content: center;
+}
+
+#download {
+  /* height: 22px;
+  border: none;
+  background: #2691d9;
+  color: #e9f4fb;
+  font-weight: 700;
+  cursor: pointer;
+  outline: none;
+  border-radius: 4px;
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
+  margin: 40px;
+  padding: 3px;
+  padding-bottom: 22px; */
+  margin: 20px;
+  width: 100px;
+  background: #1877f2;
+  color: white;
+  border-radius: 30px;
+  border: none;
+}
+#home {
+  background-color: #1877f2;
+  margin: 20px;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 30px;
+}
+
+#left.dark {
+  width: 700px;
+  margin: 20px auto;
+}
+
+#listurl-div.light {
+  margin: 15px auto;
+  /* padding: 10px; */
+  width: 700px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
+}
+
+#listurl-div.dark {
+  margin: 15px 20px;
+  background: #474747;
+  border-radius: 10px;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
+}
+
+#listurl-div .list {
+  list-style-type: none;
+
+  padding: 7px 0;
+  border-bottom: 2px solid #adadad;
+  margin: 7px 30px;
+}
+
+.list {
+  padding: 15px;
+}
+
+.expense-info {
+  text-decoration: none;
+  color: palegoldenrod;
+  display: inline-block;
+}
+
+.bottom {
+  padding: 20px;
+  width: 100%;
+  bottom: 0px;
+  text-align: center;
+  margin-top: 50px;
+}

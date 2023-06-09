@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forget Password</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Forgot Password</h1>
+    </header>
+    <div class="container">
+        <form onsubmit="forgotPass(event)" id="my-login" method="POST">
+            <div>
+
+                <div class="form_items">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" required />
+                </div>
+
+                <div>
+                    <input class="btn" type="submit" value="send">
+
+                </div>
+        </form>
+    </div>
+    <div id="existing"></div>
+    <ul id="listOfUsers"></ul>
+
+    <script src="./forgot.js"></script>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.2/axios.min.js"></script>
+</body>
+
+</html>
